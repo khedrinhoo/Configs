@@ -1,0 +1,17 @@
+[open]
+rules = [
+	{ mime = "text/*",  use = "edit" },
+	{ mime = "image/*", use = "open" },
+	{ mime = "video/*", use = "play" },
+]
+
+[opener]
+edit = [
+	{ run = 'nvim "$@"', block = true, for = "unix" },
+]
+open = [
+	{ run = 'sxiv "$@"', desc = "Open" },
+]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+]
