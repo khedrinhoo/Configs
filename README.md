@@ -9,6 +9,14 @@ It is based on mainly Five workspaces can be more but in a small amount of time.
 
 Browser | Terminal (tmux 3 sessions) | Development | Notes (latex) | Media (media tools)
 ## Installation
+* Before starting you should install dependencies with or after arch installation .
+
+```console
+
+$ sudo pacman -S base-devel git gcc gdb lua make
+
+```
+
 * After running install.sh the scripts start to install all needed software or system software from [Pacman](https://wiki.archlinux.org/title/Pacman) or [AUR](https://wiki.archlinux.org/title/Arch_User_Repository) or from the source code like [Suckless](https://suckless.org/) programs
 
 ```console
