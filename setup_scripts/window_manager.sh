@@ -5,6 +5,8 @@ wm(){
 	wm=(
         hyprland
 		i3
+        xorg
+        xorg-xinit
 	)
 
     wmaur=(
