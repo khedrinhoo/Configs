@@ -1,25 +1,12 @@
 # Config
-
-This is **my** configuration files for my linux setup
-
+These are my configuration files for my Linux setup.
 ### NOTE
-
-* All configurations is customized for me and for my use cases , so it can be useful for someone how needs a minimal setup
-based on [i3](https://i3wm.org/) or hyprland
-
-* The installation script and inherent scripts are designed to be apply to my system file structure and what i need from this
-software to do , so it sometimes not setuped will for your machine , for me it works fine all time (you can configured it manually without scripts)
-
-* This setup mainly for Arch Linux , but you can change the package manager in scripts and it in 90% works for all unix systems 
-
+* All configurations are customized for me and my use cases, so it can be useful for someone who needs a minimal setup based on i3 or Hyprland.
+* The installation script and inherent scripts are designed to be applied to my system file structure and what I need from this software to do, so it is sometimes not set well for your machine, it works fine all the time for me(you can configure it manually without scripts)
+* 1This setup is mainly for Arch Linux, but you can change the package manager in scripts and it works 90% for all Unix systems.
 ## Setup form
-
-I based on mainly Five work spaces can be more but in little amount of time
-
-Browser | Terminal (tmux 3 sessions) | Development | Notes (latex) | Media (media tools) 
-
+It is based on mainly Five workspaces can be more but in a small amount of time.
+Browser | Terminal (tmux 3 sessions) | Development | Notes (latex) | Media (media tools)
 ## Installation
-
-* After running install.sh the scripts starts to install all needed softwares or system softwares from pacman or aur
- 
-* The configuration files is managed by GNU Stow which is symlik manager to manage all files from the repo and it set all true locations for them
+* After running install.sh the scripts start to install all needed software or system software from Pacman or aur
+* The configuration files are managed by GNU Stow which is a symlink manager that manages all files from the repo and it sets all true locations for them.
