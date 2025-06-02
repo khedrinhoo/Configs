@@ -6,6 +6,7 @@ These are my configuration files for my Linux setup.
 * 1This setup is mainly for Arch Linux, but you can change the package manager in scripts and it works 90% for all Unix systems.
 ## Setup form
 It is based on mainly Five workspaces can be more but in a small amount of time.
+
 Browser | Terminal (tmux 3 sessions) | Development | Notes (latex) | Media (media tools)
 ## Installation
 * After running install.sh the scripts start to install all needed software or system software from Pacman or aur
