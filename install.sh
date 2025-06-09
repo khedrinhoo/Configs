@@ -16,7 +16,7 @@ source setup_scripts/bluetooth.sh
 source setup_scripts/fonts.sh 
 source setup_scripts/media.sh 
 source setup_scripts/development.sh 
-source setup_scripts/termial.sh 
+source setup_scripts/terminal.sh 
 source setup_scripts/window_manager.sh 
 
 # Start promt

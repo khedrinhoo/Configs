@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir(){
+directories(){
 
 	cd setup_scripts
 	chmod +x *.sh

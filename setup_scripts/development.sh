@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dev(){
+development(){
 
 	dev=(
 		base-devel

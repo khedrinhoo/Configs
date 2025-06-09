@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wm(){
+window_manager(){
 
 	wm=(
         hyprland
