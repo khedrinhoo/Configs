@@ -62,17 +62,15 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] 	 = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_base, "-nf", col_muted, "-sb", col_pine, "-sf", col_text, NULL };
 static const char *termcmd[]  	 = { "st", NULL };
-static const char *browsercmd[]  = { "brave", NULL };
+static const char *dmenucmd[]  	 = { "dmenu_run", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 
-	// commands
-	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
+	// terminal
 	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,             		XK_w,  	   spawn,          {.v = browsercmd } },
+	{ MODKEY,             		XK_space,  spawn,          {.v = dmenucmd } },
 
 	// windows
 	{ MODKEY,                       XK_s, 	   zoom,           {0} },
