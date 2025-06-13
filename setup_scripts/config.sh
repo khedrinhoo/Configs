@@ -1,6 +1,6 @@
 #!/bin/bash
 
-directories(){
+config(){
 
 	cd setup_scripts
 	chmod +x *.sh
@@ -9,19 +9,17 @@ directories(){
 	mkdir $HOME/.config
 	mkdir $HOME/.src
 
+	sudo pacman -S --needed --noconfirm
+
 	config=(
+		dwm
 		dmenu
+		st
 		fontconfig
-		hypr
-		i3
-		i3status
-		nvim
-		sxhkd
-		tmux
-		wezterm
-		yazi
 		zathura
-		zsh
+		nvim
+		tmux
+		yazi
 	)	
 	
 	for CONFIG in "${config[@]}"; do

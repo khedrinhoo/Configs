@@ -9,15 +9,12 @@ NC='\e[0m'
 
 # Source setup scripts
 source setup_scripts/package_setup.sh 
-source setup_scripts/directories.sh 
-source setup_scripts/hardware.sh 
-source setup_scripts/pipewire.sh 
-source setup_scripts/bluetooth.sh 
-source setup_scripts/fonts.sh 
+source setup_scripts/config.sh 
+source setup_scripts/basics.sh 
+source setup_scripts/suckless.sh 
 source setup_scripts/media.sh 
 source setup_scripts/development.sh 
 source setup_scripts/terminal.sh 
-source setup_scripts/window_manager.sh 
 
 # Start promt
 setup() {
@@ -34,10 +31,10 @@ EOF
 }
 setup
 
-# Directories
-printf "${BOLD}${BLUE}Directories${NC}\n"
-printf "Setup directories...\n"
-directories
+# Config
+printf "${BOLD}${BLUE}Config${NC}\n"
+printf "Setup Configuration...\n"
+config
 printf "${GREEN}########## Done ##########${NC}\n"
 
 # AUR
@@ -55,44 +52,16 @@ sudo pacman -Syu --noconfirm
 yay -Syu --noconfirm
 printf "${GREEN}########## Done ##########${NC}\n"
 
-# Hardware
-printf "${BOLD}${BLUE}Hardware${NC}\n"
-printf "Setup hardware...\n"
-hardware
+# Basics
+printf "${BOLD}${BLUE}Basics${NC}\n"
+printf "Setup Basics...\n"
+basics
 printf "${GREEN}########## Done ##########${NC}\n"
 
-# Audio
-printf "${BOLD}${BLUE}Audio${NC}\n"
-printf "Uninstall pulseaudio...\n"
-uninstall_package pulseaudio
-printf "${GREEN}########## Done ##########${NC}\n"
-printf "Setup pipewire...\n"
-pipewire
-printf "${GREEN}########## Done ##########${NC}\n"
-
-# Bluetooth
-printf "${BOLD}${BLUE}Bluetooth${NC}\n"
-printf "Setup bluetooth...\n"
-bluetooth
-printf "${GREEN}########## Done ##########${NC}\n"
-
-# Network
-printf "${BOLD}${BLUE}Network${NC}\n"
-printf "Setup network...\n"
-sudo pacman -S --noconfirm --needed networkmanager 
-sudo systemctl enable NetworkManager
-printf "${GREEN}########## Done ##########${NC}\n"
-
-# Fonts
-printf "${BOLD}${BLUE}Fonts${NC}\n"
-printf "Setup fonts...\n"
-fonts
-printf "${GREEN}########## Done ##########${NC}\n"
-
-## Media
-printf "${BOLD}${BLUE}Media${NC}\n"
-printf "Setup media...\n"
-media
+## Suckless
+printf "${BOLD}${BLUE}Suckless${NC}\n"
+printf "Setup Suckless Utils...\n"
+suckless
 printf "${GREEN}########## Done ##########${NC}\n"
 
 ## Browser
@@ -102,10 +71,10 @@ sudo pacman -S --noconfirm --needed chromium
 yay -S --noconfirm --needed brave-bin 
 printf "${GREEN}########## Done ##########${NC}\n"
 
-## Dev
-printf "${BOLD}${BLUE}Dev${NC}\n"
-printf "Setup Development-env...\n"
-development
+## Media
+printf "${BOLD}${BLUE}Media${NC}\n"
+printf "Setup media...\n"
+media
 printf "${GREEN}########## Done ##########${NC}\n"
 
 ## Terminal
@@ -114,8 +83,9 @@ printf "Setup Terminal...\n"
 terminal
 printf "${GREEN}########## Done ##########${NC}\n"
 
-## Window Manager
-printf "${BOLD}${BLUE}Window Manager${NC}\n"
-printf "Setup Window Manager...\n"
-window_manager
+## Development
+printf "${BOLD}${BLUE}Dev${NC}\n"
+printf "Setup Development-env...\n"
+development
 printf "${GREEN}########## Done ##########${NC}\n"
+

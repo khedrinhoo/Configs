@@ -6,14 +6,14 @@ media(){
 		sxiv
 		mpv
 		mpd
-		ffmpeg
-		gimp
-		kdenlive
-		texlive
 		zathura
 		zathura-pdf-mupdf
 		mupdf
 		libmupdf
+		ffmpeg
+		gimp
+		kdenlive
+		texlive
 	)
 
 	for MEDIA in "${media[@]}"; do
