@@ -15,6 +15,7 @@ source setup_scripts/suckless.sh
 source setup_scripts/media.sh 
 source setup_scripts/development.sh 
 source setup_scripts/terminal.sh 
+source setup_scripts/environment.sh 
 
 # Start promt
 setup() {

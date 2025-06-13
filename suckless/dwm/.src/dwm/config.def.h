@@ -16,7 +16,7 @@ static const char col_hightlighthigh[] = "#524f67";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_muted, col_base, col_hightlighthigh },
-	[SchemeSel]  = { col_text, col_foam,  col_foam  },
+	[SchemeSel]  = { col_text, col_pine,  col_foam  },
 };
 
 /* tagging */
