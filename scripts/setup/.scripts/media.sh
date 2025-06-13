@@ -3,6 +3,9 @@
 media(){
 
 	media=(
+		ffmpeg
+		gimp
+		kdenlive
 		sxiv
 		mpv
 		mpd
@@ -10,9 +13,6 @@ media(){
 		zathura-pdf-mupdf
 		mupdf
 		libmupdf
-		ffmpeg
-		gimp
-		kdenlive
 		texlive
 	)
 

@@ -4,6 +4,13 @@ development(){
 
 	dev=(
 		base-devel
+		libx11
+		libxft
+		libxinerama
+		xorg-server
+		xorg-xinit
+		wget
+		curl
 		git
 		python
 		gcc
@@ -25,6 +32,6 @@ development(){
 		install_package_aur "$DEVAUR" 
 	done
 
-	sudo systemctl enable --now sshd
+	sudo systemctl --user enable --now sshd
 
 }

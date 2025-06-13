@@ -8,14 +8,14 @@ BOLD='\e[1m'
 NC='\e[0m'
 
 # Source setup scripts
-source setup_scripts/package_setup.sh 
-source setup_scripts/config.sh 
-source setup_scripts/basics.sh 
-source setup_scripts/suckless.sh 
-source setup_scripts/media.sh 
-source setup_scripts/development.sh 
-source setup_scripts/terminal.sh 
-source setup_scripts/environment.sh 
+source scripts/setup/.scripts/package_setup.sh 
+source scripts/setup/.scripts/config.sh 
+source scripts/setup/.scripts/basics.sh 
+source scripts/setup/.scripts/development.sh 
+source scripts/setup/.scripts/suckless.sh 
+source scripts/setup/.scripts/environment.sh 
+source scripts/setup/.scripts/terminal.sh 
+source scripts/setup/.scripts/media.sh 
 
 # Start promt
 setup() {
@@ -34,7 +34,7 @@ setup
 
 # Config
 printf "${BOLD}${BLUE}Config${NC}\n"
-printf "Setup Configuration...\n"
+printf "Setup configuration...\n"
 config
 printf "${GREEN}########## Done ##########${NC}\n"
 
@@ -55,14 +55,32 @@ printf "${GREEN}########## Done ##########${NC}\n"
 
 # Basics
 printf "${BOLD}${BLUE}Basics${NC}\n"
-printf "Setup Basics...\n"
+printf "Setup basics...\n"
 basics
+printf "${GREEN}########## Done ##########${NC}\n"
+
+## Development
+printf "${BOLD}${BLUE}Dev${NC}\n"
+printf "Setup development-env...\n"
+development
 printf "${GREEN}########## Done ##########${NC}\n"
 
 ## Suckless
 printf "${BOLD}${BLUE}Suckless${NC}\n"
-printf "Setup Suckless Utils...\n"
+printf "Setup suckless...\n"
 suckless
+printf "${GREEN}########## Done ##########${NC}\n"
+
+## Environment
+printf "${BOLD}${BLUE}Environment${NC}\n"
+printf "Setup environment...\n"
+environment
+printf "${GREEN}########## Done ##########${NC}\n"
+
+## Terminal
+printf "${BOLD}${BLUE}Terminal${NC}\n"
+printf "Setup terminal...\n"
+terminal
 printf "${GREEN}########## Done ##########${NC}\n"
 
 ## Browser
@@ -76,16 +94,4 @@ printf "${GREEN}########## Done ##########${NC}\n"
 printf "${BOLD}${BLUE}Media${NC}\n"
 printf "Setup media...\n"
 media
-printf "${GREEN}########## Done ##########${NC}\n"
-
-## Terminal
-printf "${BOLD}${BLUE}Terminal${NC}\n"
-printf "Setup Terminal...\n"
-terminal
-printf "${GREEN}########## Done ##########${NC}\n"
-
-## Development
-printf "${BOLD}${BLUE}Dev${NC}\n"
-printf "Setup Development-env...\n"
-development
 printf "${GREEN}########## Done ##########${NC}\n"

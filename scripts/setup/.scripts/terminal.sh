@@ -3,13 +3,6 @@
 terminal(){
 
 	terminal=(
-		tmux
-		fzf
-		yazi
-		nvim
-		btop
-		eza
-		tldr
 		unzip
 	)
 

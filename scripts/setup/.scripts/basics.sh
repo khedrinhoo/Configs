@@ -44,14 +44,14 @@ basics(){
 		install_package_pacman "$BLUETOOTH" 
 	done
 
-	sudo systemctl enable --now bluetooth.service
+	sudo systemctl --user enable --now bluetooth.service
 
 
 	for AUDIO in "${audio[@]}"; do
 		install_package_pacman "$AUDIO" 
 	done
 
-	systemctl --user enable pipewire.service pipewire.socket 
+	sudo systemctl --user enable --now pipewire.service pipewire.socket 
 
 	for FONTS in "${fonts[@]}"; do
 		install_package_pacman "$FONTS" 
