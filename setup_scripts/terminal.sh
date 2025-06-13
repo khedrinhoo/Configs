@@ -12,6 +12,7 @@ terminal(){
 		btop
 		eza
 		tldr
+		unzip
 	)
 
 	for TERMINAL in "${terminal[@]}"; do

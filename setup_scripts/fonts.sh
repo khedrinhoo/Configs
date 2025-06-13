@@ -3,13 +3,13 @@
 fonts(){
 
 	fonts=(
-        noto-fonts
-        noto-fonts-emoji
-        ttf-noto-nerd
-        ttf-nerd-fonts-symbols
-        ttf-jetbrains-mono
-        ttf-jetbrains-mono-nerd
-        otf-font-awesome
+		noto-fonts
+		noto-fonts-emoji
+		ttf-noto-nerd
+		ttf-nerd-fonts-symbols
+		ttf-jetbrains-mono
+		ttf-jetbrains-mono-nerd
+		otf-font-awesome
 	)
 
 	for FONTS in "${fonts[@]}"; do
