@@ -4,6 +4,7 @@ development(){
 
 	dev=(
 		base-devel
+		make
 		libx11
 		libxft
 		libxinerama
