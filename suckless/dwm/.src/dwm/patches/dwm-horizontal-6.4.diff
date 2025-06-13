@@ -1,0 +1,47 @@
+diff --git a/config.def.h b/config.def.h
+index 9efa774..24d44e0 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -39,6 +39,7 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
+ 
+ static const Layout layouts[] = {
+ 	/* symbol     arrange function */
++	{ "III",      horizontal },
+ 	{ "[]=",      tile },    /* first entry is default */
+ 	{ "><>",      NULL },    /* no layout function means floating behavior */
+ 	{ "[M]",      monocle },
+diff --git a/dwm.c b/dwm.c
+index f1d86b2..9a188d9 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -175,6 +175,7 @@ static long getstate(Window w);
+ static int gettextprop(Window w, Atom atom, char *text, unsigned int size);
+ static void grabbuttons(Client *c, int focused);
+ static void grabkeys(void);
++static void horizontal(Monitor *m);
+ static void incnmaster(const Arg *arg);
+ static void keypress(XEvent *e);
+ static void killclient(const Arg *arg);
+@@ -977,6 +978,22 @@ grabkeys(void)
+ 	}
+ }
+ 
++void
++horizontal(Monitor *m)
++{
++	Client *c;
++	unsigned int n, i;
++
++	/* Count windows */
++	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
++
++	if(!n)
++		return;
++	else /* Split vertically */
++		for(i = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
++			resize(c, m->wx + i * m->mw / n, m->wy, m->mw / n - (2 * c->bw), m->wh - (2 * c->bw), False);
++}
++
+ void
+ incnmaster(const Arg *arg)
+ {

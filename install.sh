@@ -88,4 +88,3 @@ printf "${BOLD}${BLUE}Dev${NC}\n"
 printf "Setup Development-env...\n"
 development
 printf "${GREEN}########## Done ##########${NC}\n"
-
