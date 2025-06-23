@@ -1,8 +1,0 @@
-super + {period, comma, shift + m}
-	$HOME/.scripts/volume.sh {up, down, toggle}
-
-super + BackSpace
-	$HOME/.scripts/power.sh
-
-super + p
-	flameshot gui
