@@ -4,5 +4,5 @@ super + {period, comma, shift + m}
 super + BackSpace
 	$HOME/.scripts/power.sh
 
-super + w
-	brave
+super + p
+	flameshot gui
