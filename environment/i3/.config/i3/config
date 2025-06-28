@@ -2,8 +2,6 @@ set $mod Mod4
 
 font pango:JetBrainsMono Nerd Font 8
 
-smart_borders on
-
 for_window [class="^.*"] border pixel 2
                           # class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
