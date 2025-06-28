@@ -1,0 +1,9 @@
+[volume]
+command=~/.scripts/volume.sh
+interval=1
+signal=10
+
+[time]
+command=date '+%a %d %b %I:%M %p '
+interval=1
+align=center
