@@ -1,4 +1,4 @@
-# Config
+# Configs
 These are my configuration files for my Linux setup.
 ### NOTE
 * All configurations are customized for me and my use cases, so it can be useful for someone who needs a minimal setup based on [i3wm](https://i3wm.org/). 
