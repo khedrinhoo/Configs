@@ -2,21 +2,17 @@ set $mod Mod4
 
 font pango:JetBrainsMono Nerd Font 8
 
-for_window [class="^.*"] border pixel 2
-                          # class                 border  backgr. text    indicator child_border
-for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
+smart_borders on
 
-exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id nm-applet
+exec --no-startup-id xsetroot -solid "#161616"
 
 floating_modifier $mod
 tiling_drag modifier titlebar
+
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+r restart
 
 bindsym $mod+Return exec wezterm
-bindsym $mod+space exec dmenu_run -b -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10' -p 'dmenu prompt >'
 
 bindsym $mod+period exec amixer set Master 5%+
 bindsym $mod+comma exec amixer set Master 5%-
@@ -37,11 +33,11 @@ bindsym $mod+t layout toggle tabbed split
 bindsym $mod+f fullscreen toggle
 bindsym $mod+o floating toggle
 
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
+set $ws1 "1::Browser"
+set $ws2 "2::Terminal"
+set $ws3 "3::Development"
+set $ws4 "4::Notes"
+set $ws5 "5::Media"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -80,7 +76,31 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+for_window [class="^.*"] border pixel 2
+
+# class                 border  bground text    indicator child_border
+client.focused          #33B1FF #33B1FF #FFFFFF #EE5396   #33B1FF
+client.focused_inactive #525252 #525252 #FFFFFF #525252   #525252
+client.unfocused        #262626 #262626 #525252 #262626   #262626
+client.urgent           #EE5396 #EE5396 #FFFFFF #EE5396   #EE5396
+client.placeholder      #161616 #161616 #FFFFFF #161616   #161616
+
+client.background       #FFFFFF
+
 bar {
-        status_command i3blocks
-        separator_symbol " :: "
+    status_command i3blocks
+    separator_symbol " :: "
+  colors {
+    background #161616
+    statusline #FFFFFF
+    separator  #525252
+
+    focused_workspace  #33B1FF #33B1FF #FFFFFF
+    active_workspace   #262626 #262626 #FFFFFF
+    inactive_workspace #262626 #262626 #525252
+    urgent_workspace   #EE5396 #EE5396 #FFFFFF
+    binding_mode       #EE5396 #EE5396 #FFFFFF
+  }
 }
+
+bindsym $mod+space exec "dmenu_run -b -nf '#525252' -nb '#161616' -sb '#33B1FF' -sf '#FFFFFF' -fn 'JetBrainsMono Nerd Font-10' -p 'dmenu prompt >'"
