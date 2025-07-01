@@ -5,9 +5,9 @@ return {
         config = function()
             require("nvim-treesitter.configs").setup({
                 ensure_installed = {
-                    "lua",
+                    "lua"
                 },
-                sync_install = false,
+                sync_install = true,
                 auto_install = true,
                 ignore_install = { "latex" },
                 indent = {

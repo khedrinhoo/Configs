@@ -11,4 +11,6 @@ config.hide_tab_bar_if_only_one_tab = true
 config.max_fps = 120
 config.prefer_egl = true
 
+config.term = "xterm-256color"
+
 return config
