@@ -3,8 +3,8 @@
 environment(){
 
 	environment=(
-		sxhkd
-		dunst
+        i3
+        dmenu
 	)
 
 	for ENVIRONMENT in "${environment[@]}"; do

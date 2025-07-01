@@ -3,6 +3,9 @@
 terminal(){
 
 	terminal=(
+        wezterm
+        tmux
+        neovim
 		unzip
 	)
 
