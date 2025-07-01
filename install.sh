@@ -12,7 +12,6 @@ source scripts/setup/.scripts/package_setup.sh
 source scripts/setup/.scripts/config.sh 
 source scripts/setup/.scripts/basics.sh 
 source scripts/setup/.scripts/development.sh 
-source scripts/setup/.scripts/suckless.sh 
 source scripts/setup/.scripts/environment.sh 
 source scripts/setup/.scripts/terminal.sh 
 source scripts/setup/.scripts/media.sh 
@@ -65,12 +64,6 @@ printf "Setup development-env...\n"
 development
 printf "${GREEN}########## Done ##########${NC}\n"
 
-## Suckless
-printf "${BOLD}${BLUE}Suckless${NC}\n"
-printf "Setup suckless...\n"
-suckless
-printf "${GREEN}########## Done ##########${NC}\n"
-
 ## Environment
 printf "${BOLD}${BLUE}Environment${NC}\n"
 printf "Setup environment...\n"
@@ -87,7 +80,7 @@ printf "${GREEN}########## Done ##########${NC}\n"
 printf "${BOLD}${BLUE}Browser${NC}\n"
 printf "Install borwser...\n"
 sudo pacman -S --noconfirm --needed chromium 
-yay -S --noconfirm --needed brave-bin 
+yay -S --noconfirm --needed zen-browser-bin 
 printf "${GREEN}########## Done ##########${NC}\n"
 
 ## Media
