@@ -19,6 +19,7 @@ development(){
 		lua
 		luarocks
 		openssh
+        xclip
 	)
 
 	devaur=(

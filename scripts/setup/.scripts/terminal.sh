@@ -6,6 +6,8 @@ terminal(){
         wezterm
         tmux
         neovim
+        fzf
+        eza
 		unzip
 	)
 
