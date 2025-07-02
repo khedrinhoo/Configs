@@ -15,7 +15,7 @@ Browser | Terminal (tmux 3 sessions) | Development | Notes (latex) | Media (medi
 $ sudo pacman -S base-devel git 
 
 ```
-* After running install.sh the scripts start to install all needed software or system software from [Pacman](https://wiki.archlinux.org/title/Pacman) or [AUR](https://wiki.archlinux.org/title/Arch_User_Repository) or from the source code like [Suckless](https://suckless.org/) programs.
+* After running install.sh the scripts start to install all needed software or system software from [Pacman](https://wiki.archlinux.org/title/Pacman) or [AUR](https://wiki.archlinux.org/title/Arch_User_Repository) 
 ```console
 
 $ chmod +x install.sh
