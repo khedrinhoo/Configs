@@ -104,4 +104,4 @@ bar {
   }
 }
 
-bindsym $mod+space exec "dmenu_run -b -nf '#525252' -nb '#161616' -sb '#33B1FF' -sf '#FFFFFF' -fn 'JetBrainsMono Nerd Font-10' -p 'dmenu prompt >'"
+bindsym $mod+space exec "dmenu_run -nf '#525252' -nb '#161616' -sb '#33B1FF' -sf '#FFFFFF' -fn 'JetBrainsMono Nerd Font-10' -p 'dmenu prompt >'"
