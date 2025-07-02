@@ -80,7 +80,7 @@ printf "${GREEN}########## Done ##########${NC}\n"
 printf "${BOLD}${BLUE}Browser${NC}\n"
 printf "Install borwser...\n"
 sudo pacman -S --noconfirm --needed chromium 
-yay -S --noconfirm --needed zen-browser-bin 
+yay -S --noconfirm --needed brave-bin 
 printf "${GREEN}########## Done ##########${NC}\n"
 
 ## Media
