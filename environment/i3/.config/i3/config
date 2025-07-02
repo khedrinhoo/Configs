@@ -33,11 +33,11 @@ bindsym $mod+t layout toggle tabbed split
 bindsym $mod+f fullscreen toggle
 bindsym $mod+o floating toggle
 
-set $ws1 "1::Browser"
-set $ws2 "2::Terminal"
-set $ws3 "3::Development"
-set $ws4 "4::Notes"
-set $ws5 "5::Media"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -89,6 +89,7 @@ client.background       #FFFFFF
 
 bar {
     status_command i3blocks
+    position top
     separator_symbol " :: "
   colors {
     background #161616
