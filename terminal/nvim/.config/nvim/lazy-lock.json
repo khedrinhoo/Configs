@@ -8,11 +8,10 @@
   "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "19d6211c78169e78bab372b585b6fb17ad974e82" },
-  "oil.nvim": { "branch": "master", "commit": "1498d2fccff75a1321e92e4aa03ff220f87cc27e" },
+  "oil.nvim": { "branch": "master", "commit": "3b7c74798e699633d602823aefd9a4e4e36c02a8" },
   "oxocarbon.nvim": { "branch": "main", "commit": "acdfdd5d319c36170b5ad2a120283bec2f450081" },
   "pathlib.nvim": { "branch": "main", "commit": "57e5598af6fe253761c1b48e0b59b7cd6699e2c1" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
-  "tokyonight.nvim": { "branch": "main", "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3" },
-  "vimtex": { "branch": "master", "commit": "264230b18e2a4b70a935b3462a24ecc0c3850c01" }
+  "vimtex": { "branch": "master", "commit": "7f2633027c8f496a85284de0c11aa32f1e07e049" }
 }
