@@ -5,6 +5,8 @@ environment(){
 	environment=(
         i3
         dmenu
+        bspwm
+        sxhkd
 	)
 
 	for ENVIRONMENT in "${environment[@]}"; do
