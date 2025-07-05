@@ -1,5 +1,5 @@
 return {
-   
+
     'stevearc/oil.nvim',
 
     opts = {},
@@ -9,7 +9,6 @@ return {
     lazy = false,
 
     config = function()
-
         vim.keymap.set("n", "<leader>oo", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
         require("oil").setup({
