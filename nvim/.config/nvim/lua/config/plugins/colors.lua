@@ -1,17 +1,24 @@
 function Colors(color)
-	color = color or "oxocarbon"
-	vim.cmd.colorscheme(color)
-    vim.opt.background = "dark" 
+    color = color or "onedark_dark"
+    vim.cmd.colorscheme(color)
+    vim.opt.background = "dark"
 
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    vim.g.base16_colorspace = 256
+
+    --vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    --vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 return {
     {
-        "nyoom-engineering/oxocarbon.nvim",
+
+        "olimorris/onedarkpro.nvim",
+        priority = 1000,
+
         config = function()
+            require('onedarkpro').setup({})
             Colors()
         end
+
     }
 }

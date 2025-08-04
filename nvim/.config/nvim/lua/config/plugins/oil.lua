@@ -9,7 +9,8 @@ return {
     lazy = false,
 
     config = function()
-        vim.keymap.set("n", "<leader>oo", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+        vim.keymap.set("n", "<leader>oo", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
 
         require("oil").setup({
             view_options = {
@@ -19,17 +20,18 @@ return {
                 "icon",
             },
             float = {
-                max_width = 80,
-                max_height = 40,
+                max_width = 70,
+                max_height = 20,
+            },
+            win_options = {
+                winfixwidth = true,
             },
             keymaps = {
-                ["<C-v>"] = "actions.select_vsplit",
-                ["<C-i>"] = "actions.select_split",
                 ["q"] = "actions.close",
-                ["-"] = "actions.open_cwd",
-                ["_"] = "actions.parent",
+                ["-"] = "actions.parent",
             },
             skip_confirm_for_simple_edits = true,
+            default_file_explorer = true,
         })
     end
 }

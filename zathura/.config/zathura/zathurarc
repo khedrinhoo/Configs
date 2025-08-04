@@ -1,8 +1,0 @@
-set default-bg "#161616"
-set default-fg "#ffffff"
-
-set statusbar-bg "#262626"  
-set statusbar-fg "#ffffff"  
-
-set recolor "false"
-set recolor-keephue "false"

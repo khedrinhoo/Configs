@@ -5,8 +5,6 @@ return {
     dependencies = { 'nvim-tree/nvim-web-devicons' },
 
     config = function()
-        require('lualine').setup{
-            options = { section_separators = '', component_separators = '' }
-        }
+        require('lualine').setup()
     end
 }
