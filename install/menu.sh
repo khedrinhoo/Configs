@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm --needed wofi
+yay -S --noconfirm --needed tofi
