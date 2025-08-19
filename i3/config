@@ -1,7 +1,7 @@
 set $mod Mod4
 floating_modifier $mod
 
-font pango:JetBrainsMono Nerd Font 12
+font pango:JetBrainsMono Nerd Font 8
 
 hide_edge_borders smart
 for_window [class=".*"] border pixel 2
@@ -11,6 +11,10 @@ exec feh --bg-fill ~/.config/wallpaper.jpg &
 bindsym $mod+period exec amixer set Master 5%+
 bindsym $mod+comma exec amixer set Master 5%-
 bindsym $mod+m exec amixer set Master toggle
+
+bindsym $mod+s exec scrot -s -q 100 "$HOME/Personal/screenshots/%Y-%m-%d_%H-%M-%S.png" 
+bindsym $mod+w exec scrot -u -q 100 "$HOME/Personal/screenshots/%Y-%m-%d_%H-%M-%S.png" 
+bindsym $mod+Shift+s exec $HOME/.bin/screenrecord.sh
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+space exec dmenu_run
@@ -36,8 +40,9 @@ bindsym $mod+o floating toggle
 
 bindsym $mod+t layout toggle tabbed split
 
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r restart 
 bindsym $mod+Shift+e exec pkill i3
+bindsym $mod+Shift+c exec $HOME/Work/config/config.sh
 
 set $ws1 "1"
 set $ws2 "2"
@@ -82,4 +87,5 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3blocks
         separator_symbol " :: "
+        position top
 }
