@@ -35,10 +35,7 @@ source install/hardware.sh
 source install/bluetooth.sh
 source install/screenshot.sh
 source install/screenrecord.sh
-source install/theme.sh
-source install/hypr.sh
-source install/bar.sh
-source install/menu.sh
+source install/i3.sh
 source install/browser.sh
 source install/terminal.sh
 source install/development.sh

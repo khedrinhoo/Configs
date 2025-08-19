@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm ffmpeg mpv
+sudo pacman -S --needed --noconfirm mpv
