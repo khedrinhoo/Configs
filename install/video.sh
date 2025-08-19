@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm ffmpeg totem
+sudo pacman -S --needed --noconfirm ffmpeg mpv

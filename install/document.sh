@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm evince
+sudo pacman -S --needed --noconfirm zathura

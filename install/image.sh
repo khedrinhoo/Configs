@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm eog
+sudo pacman -S --needed --noconfirm feh sxiv

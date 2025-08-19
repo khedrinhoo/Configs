@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm --needed alsa-utils alsa-firmware wiremix decibels pavucontrol
+sudo pacman -S --noconfirm --needed alsa-utils alsa-firmware pipewire 

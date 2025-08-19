@@ -18,14 +18,24 @@
     "clock"
   ],
 
-  "hyprland/workspaces": {
+"hyprland/workspaces": {
+    "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
+      "default": "",
       "1": "1",
       "2": "2",
       "3": "3",
       "4": "4",
-      "5": "5"
+      "5": "5",
+      "active": "󱓻"
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
     }
   },
 

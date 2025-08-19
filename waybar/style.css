@@ -10,15 +10,10 @@
   font-size: 12px;
 
   background: black;
+  color: white;
 
-}
-
-#workspaces button, #custom-uptime {
-    color: white;              
-    font-weight: bold;
 }
 
 #clock, #pulseaudio, #bluetooth, #network, #memory, #cpu {
   padding: 0px 10px;
-  color: white;
 }

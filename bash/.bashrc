@@ -11,6 +11,9 @@ function parse_git_branch {
 # promt
 export PS1="\[\e[34;1m\]\W\[\e[0m\]\[\e[35;1m\]\$(parse_git_branch)\[\e[0m\] \[\e[33m\]❯\[\e[31m\]❯\[\e[32m\]❯\[\e[0m\] "
 
+# vi mode
+set -o vi
+
 # aliases
 alias ls='eza -l'
 alias la='eza -la'
@@ -21,5 +24,7 @@ alias r='sudo pacman -Rns'
 
 alias vim='nvim'
 
-# vi mode
-set -o vi
+
+
+
+
