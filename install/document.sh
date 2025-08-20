@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm zathura
+sudo pacman -S --needed --noconfirm zathura zathura-pdf-mupdf

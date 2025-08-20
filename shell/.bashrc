@@ -23,8 +23,3 @@ alias i='sudo pacman -S'
 alias r='sudo pacman -Rns'
 
 alias vim='nvim'
-
-
-
-
-

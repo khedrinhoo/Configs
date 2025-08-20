@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm scrot
+sudo pacman -S --needed --noconfirm grim slurp

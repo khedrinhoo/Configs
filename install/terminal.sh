@@ -1,4 +1,9 @@
 #!/bin/bash
 
 sudo pacman -S --needed --noconfirm \
-	alacritty tmux nvim eza fzf unzip \
+	ghostty \
+    tmux \
+    nvim \
+    eza \
+    fzf \
+    unzip \

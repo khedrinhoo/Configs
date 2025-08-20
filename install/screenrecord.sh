@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm --needed ffmpeg
+sudo pacman -S --noconfirm --needed ffmpeg wf-recorder
