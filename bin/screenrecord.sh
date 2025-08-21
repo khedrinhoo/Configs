@@ -9,6 +9,6 @@ else
         --codec libx264rgb \
         -b 0 \
         -a \
-        -f "$HOME/Videos/screenrecords/$(date +%Y-%m-%d_%H-%M-%S).mp4" &
+        -f "$HOME/Personal/screenrecords/$(date +%Y-%m-%d_%H-%M-%S).mp4" &
     disown
 fi

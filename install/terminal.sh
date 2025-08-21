@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S --needed --noconfirm \
-	ghostty \
+	alacritty ghostty \
     tmux \
     nvim \
     eza \
