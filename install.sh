@@ -23,19 +23,21 @@ EOF
 setup
 
 # Source setup scripts
-source install/aur.sh
 source install/audio.sh
-source install/video.sh
-source install/image.sh
+source install/aur.sh
+source install/bar.sh
+source install/bluetooth.sh
+source install/browser.sh
+source install/development.sh
 source install/document.sh
-source install/graphics.sh
 source install/filemanager.sh
 source install/fonts.sh
+source install/graphics.sh
 source install/hardware.sh
-source install/bluetooth.sh
-source install/screenshot.sh
+source install/hypr.sh
+source install/image.sh
+source install/latex.sh
 source install/screenrecord.sh
-source install/i3.sh
-source install/browser.sh
+source install/screenshot.sh
 source install/terminal.sh
-source install/development.sh
+source install/video.sh

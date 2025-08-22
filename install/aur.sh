@@ -10,4 +10,4 @@ cd yay-bin
 
 makepkg -si --noconfirm --needed
 
-cd ~/configs/
+cd ~/Configs/

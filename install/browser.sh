@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm --needed chromium firefox
+sudo pacman -S --noconfirm --needed chromium 

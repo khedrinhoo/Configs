@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --needed --confirm texlive
+sudo pacman -S --needed --noconfirm texlive
