@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm --needed nautilus
+sudo pacman -S --noconfirm --needed nautilus yazi
