@@ -9,7 +9,7 @@ function parse_git_branch {
 }
 
 # promt
-export PS1="\[\e[34;1m\]\W\[\e[0m\]\[\e[35;1m\]\$(parse_git_branch)\[\e[0m\] \[\e[33m\]❯\[\e[31m\]❯\[\e[32m\]❯\[\e[0m\] "
+export PS1="\[\e[32;1m\]➜  \[\e[36m\]\W\[\e[0m\]\[\e[31;1m\]\$(parse_git_branch)\[\e[0m\] "
 
 # vi mode
 set -o vi
