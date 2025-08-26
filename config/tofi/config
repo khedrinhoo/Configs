@@ -1,5 +1,7 @@
 prompt-text = " run: "
 
+drun-launch=true
+
 anchor = top
 
 width = 100%
