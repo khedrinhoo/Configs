@@ -15,11 +15,11 @@ export PS1="\[\e[32;1m\]➜  \[\e[36m\]\W\[\e[0m\]\[\e[31;1m\]\$(parse_git_branc
 set -o vi
 
 # aliases
-alias ls='eza -l'
-alias la='eza -la'
+alias ll='ls -ll'
+alias la='ls -la'
 
-alias u='sudo pacman -Syu && yay -Syu'
+alias u='sudo pacman -Syu'
 alias i='sudo pacman -S'
 alias r='sudo pacman -Rns'
 
-alias vim='nvim'
+alias vim='vi'
