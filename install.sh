@@ -22,4 +22,4 @@ sudo pacman -S --needed --noconfirm chromium
 sudo pacman -S --needed --noconfirm alacritty tmux
 
 # Development
-sudo pacman -S --needed --noconfirm base-devel git openssh
+sudo pacman -S --needed --noconfirm base-devel git openssh stow
