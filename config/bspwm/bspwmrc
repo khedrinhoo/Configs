@@ -1,6 +1,5 @@
 #! /bin/sh
 
-setxkbmap -option caps:escape &
 sxhkd &
 
 bspc monitor -d 1 2 3

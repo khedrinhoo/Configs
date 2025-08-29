@@ -19,7 +19,7 @@ sudo pacman -S --needed --noconfirm scrot
 sudo pacman -S --needed --noconfirm chromium
 
 # Terminal
-sudo pacman -S --needed --noconfirm alacritty tmux
+sudo pacman -S --needed --noconfirm alacritty tmux fzf
 
 # Development
-sudo pacman -S --needed --noconfirm base-devel git openssh stow
+sudo pacman -S --needed --noconfirm base-devel git openssh stow python3
