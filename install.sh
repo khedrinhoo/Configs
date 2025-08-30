@@ -10,7 +10,7 @@ sudo pacman -S --needed --noconfirm bspwm sxhkd
 sudo pacman -S --needed --noconfirm ttf-cascadia-mono-nerd noto-fonts noto-fonts-emoji
 
 # Audio
-sudo pacman -S --needed --noconfirm pipewire pipewire-pulse alsa-utils
+sudo pacman -S --needed --noconfirm pipewire pipewire-pulse pipewire-alsa alsa-utils
 
 # Screenshot
 sudo pacman -S --needed --noconfirm scrot

@@ -12,7 +12,16 @@ super + s
 	scrot -s -q 100 -o "$HOME/Screenshots/%Y-%m-%d_%H-%M-%S.png"
 
 super + w
-        scrot -u -q 100 -o "$HOME/Screenshots/%Y-%m-%d_%H-%M-%S.png"
+    scrot -u -q 100 -o "$HOME/Screenshots/%Y-%m-%d_%H-%M-%S.png"
+
+super + period
+    amixer set Master 5%+
+
+super + comma  
+    amixer set Master 5%-
+
+super + m
+    amixer set Master toggle
 
 super + Escape
 	pkill -USR1 -x sxhkd
