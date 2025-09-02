@@ -15,9 +15,9 @@ export PS1="\[\e[36;1m\]\W\[\e[0m\]\[\e[31;1m\]\$(parse_git_branch)\[\e[0m\] \[\
 set -o vi
 
 # Aliases
-alias ls="ls --color"
-alias ll="ls -ll"
-alias la="ls -la"
+alias ls="eza"
+alias ll="eza -l"
+alias la="eza -la"
 
 alias u="sudo pacman -Syu"
 alias i="sudo pacman -S"

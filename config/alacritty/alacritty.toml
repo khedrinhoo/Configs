@@ -1,44 +1,40 @@
 
-[env]
-TERM = "xterm-256color"
-
 [font]
 normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
 bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
 italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
+size = 20
 
 [window]
 padding.x = 4
 padding.y = 4
+decorations = "None"
 
+# Colors (One Dark)
+
+# Default colors
 [colors.primary]
-foreground = "#dedede"
-background = "#121212"
+background = '#000000'
+foreground = '#ffffff'
 
-[colors.cursor]
-text = "#ffffff"
-cursor = "#ffa560"
-
-[colors.selection]
-text = "#f4f4f4"
-background = "#474e91"
-
+# Normal colors
 [colors.normal]
-black = "#929292"
-red = "#e27373"
-green = "#94b979"
-yellow = "#ffba7b"
-blue = "#97bedc"
-magenta = "#e1c0fa"
-cyan = "#00988e"
-white = "#dedede"
+black   = '#1e2127'
+red     = '#e06c75'
+green   = '#98c379'
+yellow  = '#d19a66'
+blue    = '#61afef'
+magenta = '#c678dd'
+cyan    = '#56b6c2'
+white   = '#ffffff'
 
+# Bright colors
 [colors.bright]
-black = "#bdbdbd"
-red = "#ffa1a1"
-green = "#bddeab"
-yellow = "#ffdca0"
-blue = "#b1d8f6"
-magenta = "#fbdaff"
-cyan = "#1ab2a8"
-white = "#ffffff"
+black   = '#5c6370'
+red     = '#e06c75'
+green   = '#98c379'
+yellow  = '#d19a66'
+blue    = '#61afef'
+magenta = '#c678dd'
+cyan    = '#56b6c2'
+white   = '#ffffff'
