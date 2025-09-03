@@ -23,4 +23,4 @@ alias u="sudo pacman -Syu"
 alias i="sudo pacman -S"
 alias r="sudo pacman -Rns"
 
-alias vi="vim"
+alias vim="nvim"
