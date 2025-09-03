@@ -22,5 +22,3 @@ alias la="eza -la"
 alias u="sudo pacman -Syu"
 alias i="sudo pacman -S"
 alias r="sudo pacman -Rns"
-
-alias vim="nvim"
