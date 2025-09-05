@@ -1,3 +1,11 @@
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "Cascadia Mono", style = "Regular" }
+bold = { family = "Cascadia Mono", style = "Bold" }
+italic = { family = "Cascadia Mono", style = "Italic" }
+
 [colors.primary]
 foreground = "#dedede"
 background = "#121212"
@@ -29,11 +37,3 @@ blue = "#b1d8f6"
 magenta = "#fbdaff"
 cyan = "#1ab2a8"
 white = "#ffffff"
-
-[env]
-TERM = "xterm-256color"
-
-[font]
-normal = { family = "Cascadia Mono", style = "Regular" }
-bold = { family = "Cascadia Mono", style = "Bold" }
-italic = { family = "Cascadia Mono", style = "Italic" }
