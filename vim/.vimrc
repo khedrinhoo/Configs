@@ -19,3 +19,7 @@ set autoindent
 set noswapfile
 
 set clipboard=unnamedplus
+
+set background=dark
+
+colorscheme jellybeans
