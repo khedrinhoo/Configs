@@ -1,0 +1,18 @@
+
+super + w
+	chromium
+
+super + period
+	amixer set Master 5%+
+
+super + comma
+	amixer set Master 5%-
+
+super + m
+	amixer set Master toggle
+
+super + s
+	scrot -q 100 -s ~/Downloads/region_%Y-%m-%d_%H-%M-%S.png
+
+super + shift + s
+	scrot -q 100 -u ~/Downloads/region_%Y-%m-%d_%H-%M-%S.png
