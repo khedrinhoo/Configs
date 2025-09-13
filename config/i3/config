@@ -85,6 +85,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
+#bar {
       #status_command i3blocks
-}
+#}
