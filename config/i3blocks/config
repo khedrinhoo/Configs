@@ -1,7 +1,0 @@
-[date]
-command=date +%d
-interval=1
-
-[time]
-command=date +%I:%M 
-interval=1
