@@ -23,6 +23,6 @@ $ ./install.sh
 * The configuration files are managed by [GNU Stow](https://www.gnu.org/software/stow/) which is a symlink manager that manages all files from the repo and it sets all true locations for them it works from the script, but if you need to make it manually here is it.
 ```console
 
-$ stow --target=$HOME --dir=<package name> $(ls <package name>)
+$ stow --target=$HOME/.config $(ls <package name>)
 
 ```
