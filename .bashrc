@@ -12,9 +12,9 @@ git_branch() {
 PS1='\[\e[92m\]➜  \[\e[96;1m\]\W\[\e[0m\]\[\e[91m\]$(git_branch)\[\e[0m\] '
 
 # Aliases
-alias ls="eza"
-alias ll="eza -ll"
-alias la="eza -la"
+alias ls="ls --color"
+alias ll="ls -ll"
+alias la="ls -la"
 
 alias u="sudo apt update && sudo apt upgrade"
 alias i="sudo apt install"
