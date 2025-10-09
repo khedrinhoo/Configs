@@ -11,11 +11,11 @@
 * [Grammer Book](https://www.amazon.com/Infographic-Guide-Grammar-Reference-Everything/dp/1507212380)
 
 # Reading
-* Steve Jobs Book DODO's Choise
 * [News](https://www.newsinlevels.com/)
 * [Skills Basic](https://freekidsbooks.org/)
 * [Skills Advanced](http://ww38.projectgutenberg.org/)
 * [Vocab Flashcards](https://ankiweb.net/shared/info/1243388349)
+* [Steve Jobs Book DODO's Choise](https://www.amazon.com/Steve-Jobs-Thought-Different-Biography/dp/125001445X)
 
 # Listening
 **Shadwing**
