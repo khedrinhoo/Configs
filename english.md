@@ -11,6 +11,7 @@
 * [Grammer Book](https://www.amazon.com/Infographic-Guide-Grammar-Reference-Everything/dp/1507212380)
 
 # Reading
+* Steve Jobs Book DODO's Choise
 * [News](https://www.newsinlevels.com/)
 * [Skills Basic](https://freekidsbooks.org/)
 * [Skills Advanced](http://ww38.projectgutenberg.org/)
