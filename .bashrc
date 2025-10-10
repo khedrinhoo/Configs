@@ -16,9 +16,9 @@ alias ls="eza"
 alias ll="ls -ll"
 alias la="ls -la"
 
-alias u="sudo apt update && sudo apt upgrade"
-alias i="sudo apt install"
-alias r="sudo apt remove"
+alias u="sudo pacman -Syu"
+alias i="sudo pacman -S"
+alias r="sudo pacman -Rns"
 
 # Vim
 set -o vi
