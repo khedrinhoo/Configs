@@ -5,6 +5,7 @@ TERM = "xterm-256color"
 normal = { family = "JetBrains Mono Nerd Font", style = "Regular" }
 bold = { family = "JetBrains Mono Nerd Font", style = "Bold" }
 italic = { family = "JetBrains Mono Nerd Font", style = "Italic" }
+size = 15
 
 [window]
 padding.x = 2
@@ -12,33 +13,41 @@ padding.y = 2
 decorations = "None"
 
 [colors.primary]
-foreground = "#dedede"
-background = "#121212"
+background = '#191724'
+foreground = '#e0def4'
 
 [colors.cursor]
-text = "#ffffff"
-cursor = "#ffa560"
+text = '#e0def4'
+cursor = '#524f67'
+
+[colors.vi_mode_cursor]
+text = '#e0def4'
+cursor = '#524f67'
 
 [colors.selection]
-text = "#f4f4f4"
-background = "#474e91"
+text = '#e0def4'
+background = '#403d52'
 
 [colors.normal]
-black = "#929292"
-red = "#e27373"
-green = "#94b979"
-yellow = "#ffba7b"
-blue = "#97bedc"
-magenta = "#e1c0fa"
-cyan = "#00988e"
-white = "#dedede"
+black = '#26233a'
+red = '#eb6f92'
+green = '#31748f'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ebbcba'
+white = '#e0def4'
 
 [colors.bright]
-black = "#bdbdbd"
-red = "#ffa1a1"
-green = "#bddeab"
-yellow = "#ffdca0"
-blue = "#b1d8f6"
-magenta = "#fbdaff"
-cyan = "#1ab2a8"
-white = "#ffffff"
+black = '#6e6a86'
+red = '#eb6f92'
+green = '#31748f'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ebbcba'
+white = '#e0def4'
+
+[colors.hints]
+start = {foreground = '#908caa', background = '#1f1d2e' }
+end = { foreground = '#6e6a86', background = '#1f1d2e' }

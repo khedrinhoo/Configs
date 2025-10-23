@@ -1,19 +1,13 @@
-[ram]
-command=free -h | awk '/Mem:/ {print "RAM: " $3 "/" $2}'
-interval=1
-
-[cpu]
-command=echo "CPU: $(top -bn1 | awk '/Cpu\(s\)/ {printf "%.0f%%", 100 - $8}')"
-interval=1
 
 [volume]
-command=amixer get Master | awk -F'[][]' 'END{ if($4=="off") print "VOL: muted"; else print "VOL: "$2 }'
+label=Vol 
+command=amixer get Master | awk -F'[][]' 'END{if($4=="off"){print "Mute"}else{print $2}}'
 interval=1
 
 [date]
-command=date +"%d/%m"
-interval=1
+command=date '+%a %d/%m'
+interval=60
 
 [time]
-command=date +"%I:%M %p "
+command=date '+%I:%M %p '
 interval=1
