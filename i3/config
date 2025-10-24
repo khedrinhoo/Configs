@@ -11,7 +11,7 @@ focus_wrapping no
 tiling_drag modifier titlebar
 
 bindsym $mod+Return exec alacritty
-bindsym $mod+w exec chromium
+bindsym $mod+w exec zen-browser
 bindsym $mod+space exec dmenu_run
 
 bindsym $mod+period exec amixer set Master 5%+
