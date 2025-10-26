@@ -2,7 +2,7 @@
 set $mod Mod4
 floating_modifier $mod
 
-font pango:JetBrains Mono Nerd Font 8
+font pango:JetBrainsMono Nerd Font 8
 
 for_window [class=".*"] border pixel 2
 smart_borders on
@@ -11,9 +11,8 @@ focus_wrapping no
 tiling_drag modifier titlebar
 
 exec --no-startup-id setxkbmap -layout us,ara -variant ,digits -option grp:alt_shift_toggle caps:escape
-exec --no-startup-id feh --bg-fill --randomize $HOME/Personal/Wallpapers/*
 
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 bindsym $mod+w exec zen-browser
 bindsym $mod+n exec obsidian
 bindsym $mod+space exec dmenu_run
@@ -92,26 +91,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# class                 border  bground text    indicator child_border
-client.focused          #33B1FF #33B1FF #FFFFFF #33B1FF   #33B1FF
-client.focused_inactive #393939 #393939 #FFFFFF #393939   #393939
-client.unfocused        #262626 #262626 #DDE1E6 #262626   #262626
-client.urgent           #EE5396 #EE5396 #FFFFFF #EE5396   #EE5396
-client.placeholder      #161616 #161616 #FFFFFF #161616   #161616
-
 client.background       #FFFFFF
 
 bar {
   status_command i3blocks
-  colors {
-    background #161616
-    statusline #FFFFFF
-    separator  #525252
-
-    focused_workspace  #33B1FF #33B1FF #FFFFFF
-    active_workspace   #262626 #262626 #FFFFFF
-    inactive_workspace #262626 #262626 #DDE1E6
-    urgent_workspace   #EE5396 #EE5396 #FFFFFF
-    binding_mode       #EE5396 #EE5396 #FFFFFF
-  }
 }
