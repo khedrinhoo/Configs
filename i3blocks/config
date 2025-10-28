@@ -5,7 +5,7 @@ command=amixer get Master | awk -F'[][]' 'END{if($4=="off"){print "Mute"}else{pr
 interval=1
 
 [date]
-command=date '+%a %d/%m'
+command=date '+%d/%m'
 interval=60
 
 [time]

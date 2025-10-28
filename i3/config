@@ -13,7 +13,7 @@ tiling_drag modifier titlebar
 exec --no-startup-id setxkbmap -layout us,ara -variant ,digits -option grp:alt_shift_toggle caps:escape
 
 bindsym $mod+Return exec kitty
-bindsym $mod+w exec zen-browser
+bindsym $mod+w exec chromium
 bindsym $mod+n exec obsidian
 bindsym $mod+space exec dmenu_run
 
@@ -21,8 +21,8 @@ bindsym $mod+period exec amixer set Master 5%+
 bindsym $mod+comma exec amixer set Master 5%-
 bindsym $mod+m exec amixer set Master toggle
 
-bindsym $mod+p exec scrot -u -q 100 ~/Personal/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png
-bindsym $mod+shift+p exec scrot -s -q 100 ~/Personal/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png
+bindsym $mod+p exec scrot -u -q 100 ~/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png
+bindsym $mod+shift+p exec scrot -s -q 100 ~/Screenshots/screenshot_%Y-%m-%d_%H-%M-%S.png
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
