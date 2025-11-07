@@ -9,5 +9,5 @@ command=date '+%d/%m'
 interval=60
 
 [time]
-command=date '+%I:%M %p '
+command=date '+%I:%M '
 interval=1
