@@ -1,6 +1,6 @@
 
 function Colors(color)
-	color = color or "modus"
+	color = color or "vague"
 	vim.cmd.colorscheme(color)
 
 	--vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -9,15 +9,14 @@ end
 
 return {
     { 
-        "miikanissi/modus-themes.nvim", 
-        priority = 1000 ,
+        "vague-theme/vague.nvim",
+        lazy = false, 
+        priority = 1000, 
         config = function()
-            require('modus-themes').setup({
-                style = "modus_vivendi",
-                variant = "default",
-                styles = {
-                    functions = { italic = true }, 
-                },
+            require('vague').setup({
+                transparent = true, 
+                bold = true,
+                italic = true,
             })
             Colors();
         end
