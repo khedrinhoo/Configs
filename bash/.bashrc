@@ -16,7 +16,7 @@ alias ls="ls --color"
 alias ll="ls -ll"
 alias la="ls -la"
 
-alias u="sudo pacman -Syu"
+alias u="sudo pacman -Syu && yay -Syu"
 alias i="sudo pacman -S"
 alias r="sudo pacman -Rns"
 
