@@ -20,7 +20,7 @@ sudo pacman -S --noconfirm --needed chromium firefox
 ## Terminal
 sudo pacman -S --noconfirm --needed kitty tmux nvim nnn htop fzf
 ## Dev
-sudo pacman -S --noconfirm --needed git base-devel stow
+sudo pacman -S --noconfirm --needed git base-devel stow openssh
 ## Media
 sudo pacman -S --noconfirm --needed sxiv zathura mpv mpd 
 # Systemd
