@@ -20,5 +20,7 @@ alias u="sudo apt update && sudo apt upgrade"
 alias i="sudo apt install"
 alias r="sudo apt remove"
 
+alias h="cd /mnt/h"
+
 # Vim
 set -o vi
