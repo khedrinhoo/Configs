@@ -9,7 +9,7 @@ git_branch() {
 }
 
 # Prompt
-PS1='\[\e[92m\]➜  \[\e[96;1m\]\W\[\e[0m\]\[\e[91m\]$(git_branch)\[\e[0m\] '
+PS1='\[\e[92m\]➜  \[\e[96;1m\]\w\[\e[0m\]\[\e[91m\]$(git_branch)\[\e[0m\] '
 
 # Aliases
 alias ls="ls --color"
@@ -19,8 +19,6 @@ alias la="ls -la"
 alias u="sudo pacman -Syu && yay -Syu"
 alias i="sudo pacman -S"
 alias r="sudo pacman -Rns"
-
-alias vim="nvim"
 
 # Vim
 set -o vi
