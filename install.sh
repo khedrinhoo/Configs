@@ -9,7 +9,7 @@ sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji ttf-jetbrains-mo
 cd $HOME/.src
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
-makepkg -si --noconfirm
+makepkgc -si --noconfirm
 cd $HOME/Configs 
 ## Window Manager
 sudo pacman -S --noconfirm --needed sway swaybg rofi
@@ -22,6 +22,6 @@ sudo pacman -S --noconfirm --needed git base-devel stow openssh
 ## Media
 sudo pacman -S --noconfirm --needed sxiv zathura mpv mpd 
 # Systemd
-sudo systemctl enable --now bluetooth
+sudo systemtl enable --now bluetooth
 sudo systemctl enable --now NetworkManager
 systemctl --user enable --now pipewire pipewire-pulse
