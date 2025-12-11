@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Installation
-
 ## Hardware
 sudo pacman -S --noconfirm --needed bluez bluez-utils networkmanager 
 sudo pacman -S --noconfirm --needed pipewire pipewire-audio pipewire-pulse pipewire-alsa pipewire-jack alsa-utils
