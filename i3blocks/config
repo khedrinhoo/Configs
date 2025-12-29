@@ -1,0 +1,22 @@
+[cpu]
+command=top -bn1 | grep "Cpu(s)" | awk '{print 100-$8"%"}'
+interval=5
+label=CPU 
+
+[ram]
+command=free -h | awk '/Mem:/ {print $3}'
+interval=5
+label=RAM 
+
+[volume]
+command=amixer get Master | awk -F'[][]' 'END { if ($4=="off") print "Muted"; else print $2 }'
+interval=1
+label=VOL 
+
+[date]
+command=date '+%d/%m'
+interval=1
+
+[time]
+command=date '+%I:%M %p '
+interval=1
