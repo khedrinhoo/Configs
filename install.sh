@@ -12,11 +12,11 @@ cd yay-bin
 makepkg -si --noconfirm
 cd $HOME/Configs 
 ## Window Manager
-sudo pacman -S --noconfirm --needed i3 feh
+sudo pacman -S --noconfirm --needed i3 feh scrot
 ## Web
 sudo pacman -S --noconfirm --needed chromium firefox
 ## Terminal
-sudo pacman -S --noconfirm --needed kitty tmux nvim nnn htop fzf eza
+sudo pacman -S --noconfirm --needed kitty tmux gvim nnn htop fzf eza
 ## Dev
 sudo pacman -S --noconfirm --needed git base-devel stow openssh
 ## Media

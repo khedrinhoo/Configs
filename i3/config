@@ -11,14 +11,15 @@ for_window [class=".*"] border pixel 1
 
 focus_wrapping no
 
-exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id nm-applet
-
+exec setxkbmap -layout us,ara -variant ,digits -option grp:alt_shift_toggle caps:escape &
 exec feh --bg-fill $HOME/.config/wallpaper.png &
 
 bindsym $mod+period exec amixer set Master 5%+
 bindsym $mod+comma exec amixer set Master 5%-
 bindsym $mod+m exec amixer set Master toggle
+
+bindsym $mod+p exec scrot -u "$HOME/screenshots/%Y-%m-%d_%H-%M-%S.png"
+bindsym $mod+shift+p exec scrot -s "$HOME/screenshots/%Y-%m-%d_%H-%M-%S.png"
 
 bindsym $mod+Return exec kitty
 bindsym $mod+space exec dmenu_run
