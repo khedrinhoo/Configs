@@ -1,0 +1,34 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Noto Sans Mono";
+    min-height: 0;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: #595959;
+    padding: 3px 5px;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+}
+
+#pulseaudio {
+    padding: 0 5px;
+}
