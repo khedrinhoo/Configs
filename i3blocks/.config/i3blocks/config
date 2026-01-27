@@ -1,0 +1,44 @@
+separator=true
+separator_block_width=20
+markup=pango
+color=#FFFFFF
+
+[cpu]
+label=CPU: 
+command=top -bn1 | awk '/Cpu/ {print 100-$8"%"}'
+interval=1
+
+[temperature]
+label=TEMP: 
+command=cat /sys/class/thermal/thermal_zone0/temp | awk '{print $1/1000 "°C"}'
+interval=1
+
+[memory]
+label=MEM: 
+command=free -h | awk '/^Mem:/ {print $3}'
+interval=1
+
+[network]
+label=NET: 
+command=cat /sys/class/net/enp4s0/operstate | sed 's/up/UP/;s/down/DOWN/'
+interval=1
+
+[language]
+label=KEY: 
+command=swaymsg -t get_inputs | jq -r '.[] | select(.type == "keyboard") | .xkb_active_layout_name' | head -n 1 | cut -c 1-2 | tr '[:lower:]' '[:upper:]'
+interval=1
+
+[volume]
+label=VOL: 
+command=amixer get Master | grep -oP '\d+%' | head -1
+interval=1
+
+[date]
+label=DATE: 
+command=date '+%a %d/%m'
+interval=1
+
+[time]
+label=TIME: 
+command=date '+%I:%M %p'
+interval=1

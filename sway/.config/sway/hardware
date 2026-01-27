@@ -1,0 +1,6 @@
+output HDMI-A-1 resolution 2560x1440 position 0,0
+
+input type:keyboard {
+	xkb_layout "eu,ara"
+	xkb_options "grp:alt_shift_toggle,caps:escape"
+}

@@ -1,0 +1,4 @@
+include $HOME/.config/sway/hardware 
+include $HOME/.config/sway/keybind 
+include $HOME/.config/sway/window 
+include $HOME/.config/sway/appearance 

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-FONT="Noto Sans Mono 10"
+FONT="Noto Sans Mono Bold 12"
 ROWS=20           
 BG="#000000"
 FG="#ffffff"      
-SEL_BG="#595959" 
+SEL_BG="#285577" 
 SEL_FG="#ffffff"  
 
 bemenu-run \
