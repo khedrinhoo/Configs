@@ -8,15 +8,13 @@ sudo pacman -S --noconfirm --needed pipewire pipewire-audio pipewire-pulse pipew
 # Fonts
 sudo pacman -S --noconfirm --needed noto-fonts noto-fonts-emoji 
 # Window Manager
-sudo pacman -S --noconfirm --needed hyprland hyprshot waybar bemenu-wayland sway swaybg i3blocks
+sudo pacman -S --noconfirm --needed bemenu-wayland sway swaybg i3blocks
 # Web
 sudo pacman -S --noconfirm --needed firefox chromium
 # Terminal
-sudo pacman -S --noconfirm --needed kitty tmux gvim nnn htop fzf eza
+sudo pacman -S --noconfirm --needed kitty tmux gvim nnn htop eza
 # Media
 sudo pacman -S --noconfirm --needed sxiv zathura mpv mpd unzip 
-# KDE Programs
-sudo pacman -S --noconfirm --needed dolphin okular gwenview spectacle kdenlive 
 # Systemd
 sudo systemctl enable --now bluetooth
 sudo systemctl enable --now NetworkManager
