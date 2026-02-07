@@ -1,0 +1,18 @@
+# Focused window
+super + p
+    scrot -u '%Y-%m-%d_%H-%M-%S_window.png' -e 'mv $f ~/Screenshots/'
+
+# Select region
+super + shift + p
+    scrot -s '%Y-%m-%d_%H-%M-%S_region.png' -e 'mv $f ~/Screenshots/'
+
+# Volume
+
+super + period
+    amixer set Master 5%+
+
+super + comma
+    amixer set Master 5%+
+
+super + shift + m
+    amixer set Master toggle

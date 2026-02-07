@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Dev
-sudo pacman -S --noconfirm --needed git wget curl base-devel openssh stow
+sudo pacman -S --noconfirm --needed git wget curl base-devel openssh stow vulkan-radeon zed
 
 # Suckless
-sudo pacman -S --noconfirm --needed libx11 libxft libxinerama xorg-server xorg-xinit
+sudo pacman -S --noconfirm --needed libx11 libxft libxinerama xorg-server xorg-xinit sxhkd
 
 # Network
 sudo pacman -S --noconfirm --needed networkmanager 
@@ -23,9 +23,13 @@ sudo pacman -S --noconfirm --needed firefox chromium
 sudo pacman -S --noconfirm --needed tmux vim nnn btop htop fzf
 
 # Media
-sudo pacman -S --noconfirm --needed sxiv zathura mpv mpd unzip 
+sudo pacman -S --noconfirm --needed sxiv zathura mpv mpd unzip scrot
+
+# VM
+sudo pacman -S --noconfirm --needed qemu-full virt-manager virt-viewer dnsmasq vde2 openbsd-netcat
 
 # Systemd
 sudo systemctl enable --now bluetooth
 sudo systemctl enable --now NetworkManager
+sudo systemctl enable --now libvirtd
 systemctl --user enable --now pipewire pipewire-pulse
