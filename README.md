@@ -1,11 +1,9 @@
 # Configs
 These are my configuration files for my Linux setup.
 ### NOTE
-* All configurations are customized for me and my use cases, so it can be useful for someone who needs a minimal setup based on [i3WM](https://swaywm.org/). 
+* All configurations are customized for me and my use cases, so it can be useful for someone who needs a minimal setup based on [suckless](https://suckless.org/). 
 * The installation script and inherent scripts are designed to be applied to my system file structure and what I need from this software to do, so it is sometimes not set well for your machine, it works fine all the time for me (you can configure it manually without scripts)
 * This setup is mainly for [Arch Linux](https://archlinux.org/), but you can change the package manager in scripts and it works 90% for all Unix systems.
-## Setup form
-Browser | Terminal (tmux) | Development | Latex | Media | VM
 ## Installation
 * Before starting you should install dependencies with or after arch installation .
 ```console
