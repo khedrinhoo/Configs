@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Dev
-sudo pacman -S --noconfirm --needed git wget curl base-devel openssh stow vulkan-radeon zed
+sudo pacman -S --noconfirm -- needed base-devel git wget curl openssh stow vulkan-radeon zed
 
 # Suckless
 sudo pacman -S --noconfirm --needed libx11 libxft libxinerama xorg-server xorg-xinit sxhkd
@@ -23,10 +23,10 @@ sudo pacman -S --noconfirm --needed firefox chromium
 sudo pacman -S --noconfirm --needed tmux vim nnn btop htop fzf
 
 # Media
-sudo pacman -S --noconfirm --needed sxiv zathura mpv mpd unzip scrot
+sudo pacman -S --noconfirm --needed sxiv zathura mpv mpd unzip scrot obsidian
 
 # VM
-sudo pacman -S --noconfirm --needed qemu-full virt-manager virt-viewer dnsmasq vde2 openbsd-netcat
+sudo pacman -S --noconfirm --needed gnome-boxes 
 
 # Systemd
 sudo systemctl enable --now bluetooth
